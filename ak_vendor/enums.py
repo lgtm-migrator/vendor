@@ -467,3 +467,15 @@ class FileFormatEnum:
         ANDROID_APK = [0, "APK"]
         ANDROID_AAB = [1, "AAB"]
         IOS_IPA = [2, "IPA"]
+
+
+@choices
+class NotificationChannelEnum:
+    """
+    Notification channels
+    """
+
+    class Meta:
+        IN_APP = [0, "In-App"]
+        EMAIL = [1, "Email"]
+        WEBHOOK = [2, "Webhook"]
